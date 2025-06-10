@@ -1801,7 +1801,7 @@ button.ghost:hover {
     position: fixed;
     top: 30px;
     right: 30px;
-    z-index: 1001;
+    z-index: 1000000;
     background: none;
     border: none;
     cursor: pointer;
