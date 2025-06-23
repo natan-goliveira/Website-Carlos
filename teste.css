@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* reset css */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Reset básico para o teste */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+:root {
+    --bg-color: rgba(255, 255, 255, 0.9);
+    --black-color: rgba(40, 40, 40, 0.9);
+    --dourado-color: rgba(201, 169, 100.90);
+    --bg-dark-primary: #1a1a1a;
+    --bg-dark-secondary: #282828;
+    --text-light: #f0f0f0;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #282828;
+}
+
+
+/*IMG - FUNDO - HERO ------------------*/
+.hero {
+  /* Define o espaço e o contexto de posicionamento */
+  position: relative;
+  min-height: 100svh;
+  width: 100%;
+
+  /* Define o sistema de layout para os filhos diretos */
+  display: flex;
+  flex-direction: column;
+
+  /* Estilo de fundo (opcional remover o 'fixed' se der bug no mobile) */
+  background: url('../assets/images/1_Sala-8 (1).webp') no-repeat center/cover;
+  background-attachment: fixed;
+}
+.hero-section {
+  flex-grow: 1; /* <-- A LINHA MAIS IMPORTANTE! Ordena que ele cresça. */
+
+  /* Usa flexbox para alinhar o conteúdo INTERNO (o 'aside') */
+  display: flex;
+  align-items: center; /* Alinha o 'aside' no centro verticalmente */
+  padding: 0 5%;       /* Adiciona espaçamento lateral responsivo */
+}
+aside.hero-content { /* Dê a classe 'hero-content' ao seu aside para ser específico */
+  max-width: 550px;
+  /* SEM position, SEM top, SEM left */
+}
